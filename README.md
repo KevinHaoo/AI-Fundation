@@ -1,0 +1,2 @@
+# AI-Fundation
+Some notes.
