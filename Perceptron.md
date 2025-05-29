@@ -8,7 +8,7 @@
 
 ​        在背景中提到，感知机是一种二元线性分类器，通俗地说，就是感知机能够实现：将n维数据集先进行“是/非”仅两类的类型判别，再寻求一个超平面，使得这两类数据点能够<u>完全地、正确地</u>被这个超平面<u>线性地</u>一分为二，当然前提是数据集线性可分。例如下图，一条直线将二维平面上两种类别的数据点完全地一分为二：
 
-​                                                                      <img src="https://raw.githubusercontent.com/KevinHaoo/PicCloud/main/WEB393a13769317374240437edb5e1d3b26.png?token=ATDGEQX3SAFNWQ2FSOARDHDFULBQ6" style="zoom: 33%;" />         
+​                                                                      <img src="https://cdn.jsdelivr.net/gh/KevinHaoo/PicCloud/WEB393a13769317374240437edb5e1d3b26.png" alt="" style="zoom:33%;" />      
 
 ### 2.1 一些概念的引入及其推广
 
@@ -133,7 +133,7 @@ f(x_{t+1})<f(x_t),\ t=0,1,2,...
 $$
 ​        那么，我们就能够不断执行该过程，最终便可收敛到 **局部极小点**，可参考下图：
 
-<img src="https://raw.githubusercontent.com/KevinHaoo/PicCloud/main/v2-e1e6b238b5292251690526c055858fc6_1440w.jpg?token=ATDGEQU5WWMTFXCGV6HLRN3FULCBM" alt="v2-e1e6b238b5292251690526c055858fc6_1440w" style="zoom:60%;" />
+<img src="https://cdn.jsdelivr.net/gh/KevinHaoo/PicCloud/v2-e1e6b238b5292251690526c055858fc6_1440w.jpg" alt="" style="zoom:33%;" />      
 
 ​        接下来的问题就是：如何找到下一个点 $x_{t+1}$ ，并保证 $f(x_{t+1})<f(x_t)$ 呢？假设我们当前的函数 $f(x)$ 的形式是上图的形状，现在我们随机找了一个初始的点 $x_1$ ，对于一元函数来说，函数值只会随着 $x$ 的变化而变化，那么我们就设计**下一个 $x_{t+1}$ 是从上一个 $x_t$ 沿着某一方向走一小步 $\Delta x$ 得到的。此处的关键问题就是：这一小步的方向是朝向哪里？**
 
@@ -333,7 +333,7 @@ int main(){
 
 **运行结果：**
 
-<img src="https://raw.githubusercontent.com/KevinHaoo/PicCloud/main/%E6%88%AA%E5%B1%8F2021-11-30%20%E4%B8%8B%E5%8D%8810.58.22.png?token=ATDGEQSULOZBMOTB2IH7F7LFULCD4" alt="截屏2021-11-30 下午10.58.22" style="zoom: 33%;" />
+<img src="https://cdn.jsdelivr.net/gh/KevinHaoo/PicCloud/000.png" alt="" style="zoom:33%;" />      
 
 
 
@@ -364,7 +364,7 @@ int main(){
 
 ​        但是，和实际的电流不同的是：感知机的信号只有“流/不流”（1/-1）两种取值，1对应“传递信号”，-1对应“不传递信号”。$x_i$ 是输入信号，$y_i$ 是输出信号，$w_i$ 是权重。下图中，圆圈称为“神经元”或者“节点”。
 
-<img src="https://raw.githubusercontent.com/KevinHaoo/PicCloud/main/%E6%88%AA%E5%B1%8F2021-11-30%20%E4%B8%8B%E5%8D%8810.59.21.png?token=ATDGEQRHEP2FRH6IM2SAZZDFULCCM" alt="截屏2021-11-30 下午10.59.21" style="zoom:33%;" />
+<img src="https://cdn.jsdelivr.net/gh/KevinHaoo/PicCloud/001.png" alt="" style="zoom:33%;" />      
 
 ​        对于两者的进一步、深层次联系，已有前辈进行了很好的总结：[浅谈感知机与神经网络（无师自通）](http://c.biancheng.net/view/1910.html)。
 
@@ -411,4 +411,5 @@ int main(){
 [9] [深度学习入门-感知机 - 简书](https://www.jianshu.com/p/a25788130897)
 
 [10] [浅谈感知机与神经网络（无师自通）](http://c.biancheng.net/view/1910.html)
+
 
